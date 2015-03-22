@@ -1,0 +1,89 @@
+C:\Users\Gilbert\Documents\Visual Studio 2010\Projects\XnaApp\XnaApp\XnaApp\obj\x86\Debug\XnaApp.csprojResolveAssemblyReference.cache
+C:\Users\Gilbert\Documents\Visual Studio 2010\Projects\XnaApp\XnaApp\XnaApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Gilbert\Documents\Visual Studio 2010\Projects\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\ArcoF.xnb
+C:\Users\Gilbert\Documents\Visual Studio 2010\Projects\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\ArcoT.xnb
+C:\Users\Gilbert\Documents\Visual Studio 2010\Projects\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nave.xnb
+C:\Users\Gilbert\Documents\Visual Studio 2010\Projects\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nuvem.xnb
+C:\Users\Gilbert\Documents\Visual Studio 2010\Projects\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Vida.xnb
+C:\Users\Gilbert\Documents\Visual Studio 2010\Projects\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\Gilbert\Documents\Visual Studio 2010\Projects\XnaApp\XnaApp\XnaApp\bin\x86\Debug\XnaApp.exe
+C:\Users\Gilbert\Documents\Visual Studio 2010\Projects\XnaApp\XnaApp\XnaApp\bin\x86\Debug\XnaApp.pdb
+C:\Users\Gilbert\Documents\Visual Studio 2010\Projects\XnaApp\XnaApp\XnaApp\obj\x86\Debug\XnaApp.exe
+C:\Users\Gilbert\Documents\Visual Studio 2010\Projects\XnaApp\XnaApp\XnaApp\obj\x86\Debug\XnaApp.pdb
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\ArcoF.xnb
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\ArcoT.xnb
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nave.xnb
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nuvem.xnb
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Vida.xnb
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\bin\x86\Debug\XnaApp.exe
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\bin\x86\Debug\XnaApp.pdb
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\obj\x86\Debug\XnaApp.csprojResolveAssemblyReference.cache
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\obj\x86\Debug\XnaApp.exe
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\obj\x86\Debug\XnaApp.pdb
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\mira.xnb
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\bullet.xnb
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nave2.xnb
+C:\Users\JULIAN\Desktop\XnaApp\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\bullet2.xnb
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\ArcoF.xnb
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\ArcoT.xnb
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nave.xnb
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nuvem.xnb
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Vida.xnb
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\mira.xnb
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\bullet.xnb
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nave2.xnb
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\bullet2.xnb
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\bin\x86\Debug\XnaApp.exe
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\bin\x86\Debug\XnaApp.pdb
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\obj\x86\Debug\XnaApp.csprojResolveAssemblyReference.cache
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\obj\x86\Debug\XnaApp.exe
+C:\Users\JULIAN\Desktop\XNAGame-master\XnaApp\XnaApp\obj\x86\Debug\XnaApp.pdb
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\ArcoF.xnb
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\ArcoT.xnb
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nave.xnb
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nuvem.xnb
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Vida.xnb
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\mira.xnb
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\bullet.xnb
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nave2.xnb
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\bullet2.xnb
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\bin\x86\Debug\XnaApp.exe
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\bin\x86\Debug\XnaApp.pdb
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\obj\x86\Debug\XnaApp.csprojResolveAssemblyReference.cache
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\obj\x86\Debug\XnaApp.exe
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\obj\x86\Debug\XnaApp.pdb
+C:\Users\JULIAN\Desktop\XNAGame\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\explosao.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\ArcoF.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\ArcoT.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nave.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nuvem.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Vida.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\mira.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\bullet.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\Nave2.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\bullet2.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\explosao.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\XnaApp.exe
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\XnaApp.pdb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\obj\x86\Debug\XnaApp.csprojResolveAssemblyReference.cache
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\obj\x86\Debug\XnaApp.exe
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\obj\x86\Debug\XnaApp.pdb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\boss.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\explosion_mp3cut.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\submachine.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\pistol.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\submachine_gun.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\explo.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\bullet3.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\heli.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\aim.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\explosao.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\tiro.xnb
