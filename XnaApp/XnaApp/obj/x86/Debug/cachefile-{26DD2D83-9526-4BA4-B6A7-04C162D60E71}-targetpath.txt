@@ -20,3 +20,6 @@ Content\NewFolder1\heli.xnb
 Content\Imagens\aim.xnb
 Content\NewFolder1\explosao.xnb
 Content\NewFolder1\tiro.xnb
+Content\NewFolder1\explosion.xnb
+Content\NewFolder1\goal.xnb
+Content\NewFolder1\ricmetal2.xnb

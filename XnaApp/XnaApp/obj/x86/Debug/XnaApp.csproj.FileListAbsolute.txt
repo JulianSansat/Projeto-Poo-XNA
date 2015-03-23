@@ -87,3 +87,6 @@ C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewF
 C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\Imagens\aim.xnb
 C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\explosao.xnb
 C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\tiro.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\explosion.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\goal.xnb
+C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\ricmetal2.xnb

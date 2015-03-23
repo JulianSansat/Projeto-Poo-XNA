@@ -24,9 +24,14 @@ namespace XnaApp
         SoundEffectInstance soundEngineInstance;
         SoundEffect subMachine;
         SoundEffectInstance subMachineInstance;
-
+        SoundEffect playerExplosion;
+        SoundEffectInstance playerExplosionInstance;
         SoundEffect heli;
         SoundEffectInstance heliInstance;
+        SoundEffect goal;
+        SoundEffectInstance goalInstance;
+        SoundEffect metal;
+        SoundEffectInstance metalInstance;
         
         // Imagens utilizadas no jogo
         Texture2D imgNuvem;
@@ -38,6 +43,7 @@ namespace XnaApp
         Texture2D imgEnemy;
         Texture2D imgExplosao;
         Texture2D imgBoss;
+        Texture2D imgTiroInimigo;
         
         Vector2 origin;
         
@@ -61,6 +67,7 @@ namespace XnaApp
         float tempo2 = 0f;
         float tempo3 = 0f;
         float tempo4 = 0f;
+        float tempoTiroInimigo = 0f;
         float tempoDesenha = 300f;
         float tempoJogo = 30f;
         float tempoBoss = 0f;
@@ -70,10 +77,12 @@ namespace XnaApp
         float intervaloTiro = 200f;
         float intervaloSpawnEnemies = 1000f;
         float intervaloExplosao = 40f;
-        float intervaloBoss = 20000f;
+        float intervaloBoss = 15000f;
         float intervaloDesenha = 300f;
+        float intervaloTiroInimigo = 2000f;
 
         int enemyCount = 10;
+        int bossCount = 1;
         public static readonly Random r = new Random();
 
         // Controle de vidas e placar
@@ -144,6 +153,7 @@ namespace XnaApp
             imgNave = Content.Load<Texture2D>("Imagens\\Nave");
             imgMira = Content.Load<Texture2D>("Imagens\\aim");
             imgTiro = Content.Load<Texture2D>("Imagens\\bullet3");
+            imgTiroInimigo = Content.Load<Texture2D>("Imagens\\bullet2");
             imgEnemy = Content.Load<Texture2D>("Imagens\\Nave2");
             imgExplosao = Content.Load<Texture2D>("Imagens\\explosao");
             imgBoss = Content.Load<Texture2D>("Imagens\\boss");
@@ -157,6 +167,15 @@ namespace XnaApp
 
             subMachine = Content.Load<SoundEffect>("NewFolder1\\submachine_gun");
             subMachineInstance = subMachine.CreateInstance();
+            
+            playerExplosion = Content.Load<SoundEffect>("NewFolder1\\explosion");
+            playerExplosionInstance = playerExplosion.CreateInstance();
+
+            goal = Content.Load<SoundEffect>("NewFolder1\\goal");
+            goalInstance = goal.CreateInstance();
+
+            metal = Content.Load<SoundEffect>("NewFolder1\\ricmetal2");
+            metalInstance = metal.CreateInstance();
 
             heli = Content.Load<SoundEffect>("NewFolder1\\heli");
             heliInstance = heli.CreateInstance();
@@ -182,6 +201,7 @@ namespace XnaApp
             imgEnemy.Dispose();
             imgBoss.Dispose();
             imgExplosao.Dispose();
+            imgTiroInimigo.Dispose();
         }
 
         /// <summary>
@@ -196,78 +216,102 @@ namespace XnaApp
                 this.Exit();
 
             // TODO: Add your update logic here
-            
-            //atualiza posicao da mira em relacao ao mouse
-            MouseState mouseState = Mouse.GetState(); 
-            if (mouseState.X != prevMouseState.X || mouseState.Y != prevMouseState.Y) 
-                posicaoMira = new Vector2(mouseState.X, mouseState.Y); 
-            prevMouseState = mouseState;
-            if (mouseState.LeftButton == ButtonState.Pressed)
+            if (vidas > 0 && tempoJogo > 0)
             {
-                subMachineInstance.Play();
-                if (tempo2 > intervaloTiro)
+                //atualiza posicao da mira em relacao ao mouse
+                MouseState mouseState = Mouse.GetState();
+                if (mouseState.X != prevMouseState.X || mouseState.Y != prevMouseState.Y)
+                    posicaoMira = new Vector2(mouseState.X, mouseState.Y);
+                prevMouseState = mouseState;
+                if (mouseState.LeftButton == ButtonState.Pressed)
                 {
-                    tempo2 = 0f;
-                    AddTiro(posicaoMira, new Vector2(nave.Posicao.X + 60, nave.Posicao.Y));
-                }
-            }
-           
-
-
-            //Atualiza tempos
-            tempoSpawnEnemies += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-            tempo2 += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-            tempoExplosao += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-            tempoBoss += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-            tempoDesenha+= (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-            tempoJogo -= (float)gameTime.ElapsedGameTime.TotalSeconds;
-            
-            // Atualiza frame da nave
-            AtualizarQuadroNave((float)gameTime.ElapsedGameTime.TotalMilliseconds);
-            AtualizarQuadroNaveInimigo((float)gameTime.ElapsedGameTime.TotalMilliseconds);
-            AtualizarQuadroNaveBoss((float)gameTime.ElapsedGameTime.TotalMilliseconds);
-            //atualiza naves inimigas
-            AtualizarEnemies();
-
-            // Verifica o teclado (aceleração da nave)
-            VerificarTeclado();
-
-            // Atualiza a posição das nuvens
-            AtualizarNuvens();
-
-            // Atualiza a posição dos arcos
-            AtualizarArcos();
-
-            // Atualiza a posição da nave
-            AtualizarNave();
-
-            // Atualiza os tiros
-            AtualizarTiros();
-
-            AtualizaExplosao();
-
-            AtualizarBoss();
-
-            // Controle de colisão
-            if (VerificarColisao()) vidas--;
-            else
-                // Controle de placar
-                if (AtualizarPlacar()) 
-                {
-                    placar++;
-                    tempoJogo += 3f;
-                    desenha = true;
+                    subMachineInstance.Play();
+                    if (tempo2 > intervaloTiro)
+                    {
+                        tempo2 = 0f;
+                        AddTiro(posicaoMira, new Vector2(nave.Posicao.X + 60, nave.Posicao.Y));
+                    }
                 }
 
-            if (desenha == true) 
-            {
-                tempoDesenha = 0;
-                desenha = false;
+                if (placar >= 100 && placar <= 200)
+                {
+                    intervaloBoss = 15000f;
+                    bossCount = 2;
+
+                }
+                else if (placar > 200 && placar <= 300)
+                {
+                    intervaloBoss = 1000f;
+                }
+                else if (placar > 300 && placar <= 400)
+                {
+                    bossCount = 3;
+                }
+
+
+                //Atualiza tempos
+                tempoSpawnEnemies += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+                tempo2 += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+                tempoExplosao += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+                tempoBoss += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+                tempoDesenha += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+                tempoJogo -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+                tempoTiroInimigo += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+                // Atualiza frame da nave
+                AtualizarQuadroNave((float)gameTime.ElapsedGameTime.TotalMilliseconds);
+                AtualizarQuadroNaveInimigo((float)gameTime.ElapsedGameTime.TotalMilliseconds);
+                AtualizarQuadroNaveBoss((float)gameTime.ElapsedGameTime.TotalMilliseconds);
+                //atualiza naves inimigas
+                AtualizarEnemies();
+
+                // Verifica o teclado (aceleração da nave)
+                //VerificarTeclado();
+
+                // Atualiza a posição das nuvens
+                AtualizarNuvens();
+
+                // Atualiza a posição dos arcos
+                AtualizarArcos();
+
+                // Atualiza a posição da nave
+                AtualizarNave();
+
+                // Atualiza os tiros
+                AtualizarTiros();
+
+                AtualizaExplosao();
+
+                AtualizarBoss();
+
+                
+                // Controle de colisão
+                if (VerificarColisao())
+                {
+                    metalInstance.Play();
+                    vidas--; 
+                }
+                else
+                    // Controle de placar
+                    if (AtualizarPlacar())
+                    {
+                        goalInstance.Play();
+                        placar += 5;
+                        tempoJogo += 4f;
+                        desenha = true;
+                    }
+
+                if (desenha == true)
+                {
+                    tempoDesenha = 0;
+                    desenha = false;
+                }
+                base.Update(gameTime);
             }
-
-            base.Update(gameTime);
-        }
-
+                
+                // Verifica o teclado (aceleração da nave)
+                VerificarTeclado();
+            }
+        
         /// <summary>
         /// This is called when the game should draw itself.
         /// </summary>
@@ -303,8 +347,14 @@ namespace XnaApp
                     spriteBatch.Draw(n.Imagem, n.RecDst, n.RecSrc, Color.White);
 
                 // Desenha nave boss
-                foreach (Nave b in bossEnemies)
+                foreach (Nave b in bossEnemies.ToList())
+                {
                     spriteBatch.Draw(b.Imagem, b.RecDst, b.RecSrc, Color.White);
+                    foreach (Tiro t in b.tiros.ToList())
+                    {
+                        spriteBatch.Draw(t.Imagem, t.Posicao, Color.White);
+                    }
+                }
 
                 foreach (Explosao e in explosoes)
                     spriteBatch.Draw(e.Imagem, e.RecDst, e.RecSrc, Color.White);
@@ -338,7 +388,7 @@ namespace XnaApp
 
                 if (tempoDesenha < intervaloDesenha)
                 {
-                    spriteBatch.DrawString(fonte, "+3s ", new Vector2(150, 60), Color.DarkBlue);
+                    spriteBatch.DrawString(fonte, "+4s ", new Vector2(150, 60), Color.DarkBlue);
                 }
                     // Desenha mira
                 spriteBatch.Draw(imgMira, posicaoMira, Color.White); 
@@ -451,6 +501,8 @@ namespace XnaApp
         {
             Nave boss = new Nave(new Vector2(graphics.GraphicsDevice.Viewport.Width,
                 r.Next(YMin, YMax - 200)), new Vector2(0, 0));
+            //tiros = new List<Tiro>();
+            boss.tiros = new Queue<Tiro>();
 
             boss.Imagem = imgBoss;
             boss.ImagemQtd = 3;
@@ -724,6 +776,7 @@ namespace XnaApp
             nave.RecSrc = new Rectangle(
                 nave.ImagemNum * imgNave.Width / nave.ImagemQtd, 0,
                 imgNave.Width / nave.ImagemQtd, imgNave.Height);
+            
         }
 
         private void AtualizarQuadroNaveInimigo(float elapsedTime)
@@ -802,6 +855,7 @@ namespace XnaApp
                 {
                     AddExplosao(e.Posicao);
                     enemies.Remove(e);
+                    placar++;
                 }
 
                 if (e.VerificarColisao(nave.AreaColisao[0]))
@@ -829,9 +883,13 @@ namespace XnaApp
             //
             foreach (Nave b in bossEnemies.ToList())
             {
-
+                
                 if (b.Posicao.X > -120)
                 {
+                    if (b.tiros.ToList().Count > 0)
+                    {
+                        AtualizaTirosInimigos(b);
+                    }
                     Vector2 nPos1 = new Vector2(b.Posicao.X, b.Posicao.Y);
                     Vector2 nVel1 = new Vector2(b.Velocidade.X, b.Velocidade.Y);
 
@@ -845,6 +903,31 @@ namespace XnaApp
                     b.RecDst = new Rectangle(
                         (int)b.Posicao.X, (int)b.Posicao.Y,
                         b.Imagem.Width / b.ImagemQtd, b.Imagem.Height);
+                    ////////////////////////////////////BOSS ATIRA////////////////////////////
+                    if(tempoTiroInimigo > intervaloTiroInimigo) 
+                    {
+                        Vector2 posicao = new Vector2(b.Posicao.X + 50, b.Posicao.Y + 80);
+                        Tiro tiro = new Tiro(posicao);
+                        tiro.Imagem = imgTiroInimigo;
+                        Vector2 movement = nave.Posicao - posicao;
+                        if (movement != Vector2.Zero)
+                            movement.Normalize();
+                        tiro.direcao = movement;
+                        tiro.rotation = (float)Math.Atan2(movement.Y, movement.X);
+
+                        // Posição do tiro na tela
+                        tiro.RecDst = new Rectangle(
+                            (int)tiro.Posicao.X, (int)tiro.Posicao.Y,
+                            tiro.Imagem.Width, tiro.Imagem.Height);
+
+                        // Área de colisão
+                        tiro.AreaColisao.Add(new Rectangle(
+                            tiro.RecDst.X, tiro.RecDst.Y,
+                            tiro.RecDst.Width, tiro.RecDst.Height));
+
+                        b.tiros.Enqueue(tiro);
+                        tempoTiroInimigo = 0;
+                    }
 
                 }
 
@@ -864,6 +947,7 @@ namespace XnaApp
                 {
                     AddExplosao(b.Posicao);
                     bossEnemies.Remove(b);
+                    placar += 10; 
                 }
 
                 if (b.VerificarColisao(nave.AreaColisao[0]))
@@ -876,7 +960,7 @@ namespace XnaApp
 
             }
 
-            if (bossEnemies.ToList().Count < 1 && tempoBoss > intervaloBoss)
+            if (bossEnemies.ToList().Count < bossCount && tempoBoss > intervaloBoss)
             {
                 AddBossEnemy();
                 tempoBoss = 0;
@@ -884,6 +968,37 @@ namespace XnaApp
 
         }
 
+        private void AtualizaTirosInimigos(Nave b)
+        {
+            
+            foreach (Tiro t in b.tiros.ToList())
+            {
+                t.Posicao += t.direcao * t.speed;
+
+                // Posição do tiro na tela
+                t.RecDst = new Rectangle(
+                    (int)t.Posicao.X, (int)t.Posicao.Y,
+                    t.Imagem.Width, t.Imagem.Height);
+
+                // Área de colisão
+                t.AreaColisao[0] = new Rectangle(
+                    t.RecDst.X, t.RecDst.Y,
+                    t.RecDst.Width, t.RecDst.Height);
+
+
+                if (t.VerificarColisao(nave.AreaColisao[0]))
+                {
+                    b.tiros.Dequeue();
+                    metalInstance.Play();
+                    vidas--;
+                }
+               
+                if (Vector2.Distance(t.Posicao, b.Posicao) > 1000f)
+                {
+                    b.tiros.Dequeue();
+                }
+            }  
+        }
         private void AddExplosao(Vector2 posicao)
         {
             Explosao explosao = new Explosao(posicao);

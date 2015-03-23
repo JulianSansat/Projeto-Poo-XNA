@@ -199,6 +199,33 @@
       <Output>C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\tiro.xnb</Output>
       <Time>2015-03-21T18:36:19.4890844-03:00</Time>
     </Item>
+    <Item>
+      <Source>NewFolder1\explosion.wav</Source>
+      <Name>NewFolder1\explosion</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\explosion.xnb</Output>
+      <Time>2015-03-22T13:18:28.9516941-03:00</Time>
+    </Item>
+    <Item>
+      <Source>NewFolder1\goal.wav</Source>
+      <Name>NewFolder1\goal</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\goal.xnb</Output>
+      <Time>2015-03-22T21:47:06.0032459-03:00</Time>
+    </Item>
+    <Item>
+      <Source>NewFolder1\ricmetal2.wav</Source>
+      <Name>NewFolder1\ricmetal2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\JULIAN\Desktop\Projeto-Poo-XNA\XnaApp\XnaApp\bin\x86\Debug\Content\NewFolder1\ricmetal2.xnb</Output>
+      <Time>2014-11-04T18:15:58-03:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{26DD2D83-9526-4BA4-B6A7-04C162D60E71}</ContentProjectGUID>
